@@ -149,7 +149,8 @@ def qa_generator(titles):
 
 
 if __name__ == '__main__':
-    request = "{\"student\":\"A student is a person who is learning something. Students can be children, teenagers, or adults who are going to school, but it may also be other people who are learning, such as in college or university. \" , \"Rajasthan\":\"Rajasthan is India\'s largest state by area It is located on the north western side of the India, where it comprises most of the wide and inhospitable Thar Desert (also known as the \"Rajasthan Desert\" and \"Great Indian Desert\") and shares a border with the Pakistani provinces of Punjab to the northwest and Sindh to the west\"}"
+    request = '{"student":"A student is a person who is learning something. Students can be children, teenagers, or adults who are going to school, but it may also be other people who are learning, such as in college or university."}'
+    print request
 #    json_str = request.body.decode('utf-8')
     request_json = json.loads(request)
     generate_trivia(request_json)
